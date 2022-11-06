@@ -1,5 +1,11 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  let wordBackward = ''
+  for (let index = (word.length)-1; index >= 0; index--) {
+    wordBackward = wordBackward + word[index]
+  }
+  if (wordBackward == word) return true
+  return false
 }
 
 /* 
